@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator></Creator>
+        <Created>2022-01-30T09:58:39</Created>
+        <LastChange>2022-02-20T17:30:28</LastChange>
+    </Metadata>
+    <Page imageFilename="hn-12-1-2022-03.tiff" imageWidth="2480" imageHeight="3507">
+        <ReadingOrder>
+            <UnorderedGroup id="ro357564684568544579089">
+                <OrderedGroup id="g0">
+                    <RegionRefIndexed regionRef="r13" index="0"/>
+                    <RegionRefIndexed regionRef="r15" index="1"/>
+                    <RegionRefIndexed regionRef="r17" index="2"/>
+                    <RegionRefIndexed regionRef="r21" index="3"/>
+                    <RegionRefIndexed regionRef="r22" index="4"/>
+                    <RegionRefIndexed regionRef="r23" index="5"/>
+                    <RegionRefIndexed regionRef="r24" index="6"/>
+                    <RegionRefIndexed regionRef="r25" index="7"/>
+                    <RegionRefIndexed regionRef="r26" index="8"/>
+                    <RegionRefIndexed regionRef="r28" index="9"/>
+                    <RegionRefIndexed regionRef="r29" index="10"/>
+                    <RegionRefIndexed regionRef="r30" index="11"/>
+                    <RegionRefIndexed regionRef="r33" index="12"/>
+                    <RegionRefIndexed regionRef="r34" index="13"/>
+                </OrderedGroup>
+                <OrderedGroup id="g1">
+                    <RegionRefIndexed regionRef="r38" index="0"/>
+                    <RegionRefIndexed regionRef="r40" index="1"/>
+                    <RegionRefIndexed regionRef="r42" index="2"/>
+                    <RegionRefIndexed regionRef="r43" index="3"/>
+                    <RegionRefIndexed regionRef="r44" index="4"/>
+                    <RegionRefIndexed regionRef="r45" index="5"/>
+                    <RegionRefIndexed regionRef="r46" index="6"/>
+                    <RegionRefIndexed regionRef="r49" index="7"/>
+                    <RegionRefIndexed regionRef="r50" index="8"/>
+                    <RegionRefIndexed regionRef="r51" index="9"/>
+                    <RegionRefIndexed regionRef="r52" index="10"/>
+                    <RegionRefIndexed regionRef="r53" index="11"/>
+                </OrderedGroup>
+            </UnorderedGroup>
+        </ReadingOrder>
+        <SeparatorRegion id="r0">
+            <Coords points="2281,296 2281,297 201,297 201,296"/>
+        </SeparatorRegion>
+        <SeparatorRegion id="r1">
+            <Coords points="197,442 197,3212 196,3212 196,442"/>
+        </SeparatorRegion>
+        <SeparatorRegion id="r2">
+            <Coords points="1035,767 1035,2204 1034,2204 1034,767"/>
+        </SeparatorRegion>
+        <SeparatorRegion id="r3">
+            <Coords points="1446,769 1446,1353 1445,1353 1445,769"/>
+        </SeparatorRegion>
+        <SeparatorRegion id="r4">
+            <Coords points="1858,769 1858,1353 1857,1353 1857,769"/>
+        </SeparatorRegion>
+        <ImageRegion id="r5">
+            <Coords points="2236,1382 2236,2138 1042,2138 1042,1382"/>
+        </ImageRegion>
+        <SeparatorRegion id="r6">
+            <Coords points="1035,2533 1035,3212 1034,3212 1034,2533"/>
+        </SeparatorRegion>
+        <SeparatorRegion id="r7">
+            <Coords points="1446,2533 1446,3212 1445,3212 1445,2533"/>
+        </SeparatorRegion>
+        <SeparatorRegion id="r8">
+            <Coords points="1858,2533 1858,3211 1857,3211 1857,2533"/>
+        </SeparatorRegion>
+        <SeparatorRegion id="r9">
+            <Coords points="2282,3267 2282,3276 200,3276 200,3267"/>
+        </SeparatorRegion>
+        <SeparatorRegion id="r10">
+            <Coords points="2284,513 2284,3212 2283,3212 2283,513"/>
+        </SeparatorRegion>
+        <TextRegion id="r11" type="paragraph">
+            <Coords points="2260,251 2260,252 2261,252 2261,283 2238,283 2238,251"/>
+            <TextEquiv conf="0.96548">
+                <Unicode>3</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r12" type="paragraph">
+            <Coords points="350,442 350,471 223,471 223,442"/>
+            <TextEquiv conf="0.94687">
+                <Unicode>m Analýza</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r13" type="heading">
+            <Coords points="1817,505 1817,687 225,687 225,505"/>
+            <TextEquiv conf="0.95821">
+                <Unicode>Těžká doba, ale pohodlná většina. Fiala má lepší
+                    předpoklady dovládnout, než měli předchůdci
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r14" type="paragraph">
+            <Coords points="501,738 501,750 486,750 486,738"/>
+            <TextEquiv conf="0.25486">
+                <Unicode>úd</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r17" type="paragraph">
+            <Coords points="611,1240 611,1738 224,1738 224,1240"/>
+            <TextEquiv conf="0.95573">
+                <Unicode>Po relativně klidných porevoluč-
+                    ních letech musel o důvěru poprvé
+                    obtížněji zabojovat už druhý kabinet
+                    tehdejšího šéfa ODS Václava Klause
+                    vlétě1996. Občanští demokraté chtě-
+                    li navázat na první vládu s KDU-ČSL
+                    a ODA, dohromady však měli proti
+                    ČSSD, KSČM a republikánům jen 99
+                    hlasů. A protože spolupráce s komu-
+                    nisty a krajně pravicovými republi-
+                    kány byla pro tehdejší ČSSD vedenou
+                    Milošem Zemanem nemyslitelná, vý-
+                    chodiskem ze zablokované situace
+                    byla až dohoda Klause se Zemanem,
+                    že sociálnědemokratičtí poslanci
+                    opustí při hlasování o důvěře sál.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r18" type="paragraph">
+            <Coords points="611,1744 611,2211 224,2211 224,1744"/>
+            <TextEquiv conf="0.93152">
+                <Unicode>Menšinový Klausův kabinet však
+                    v následujících měsících vládl často
+                    jen díky vzpurnému a později vylou-
+                    čenému poslanci ČSSD Jozefu Wag-
+                    nerovi. Ani to ale vládu nezachráni-
+                    loakvůli pozdějšímu rozkolu v ODS,
+                    známému jako sarajevský atentát, už
+                    vlistopadu1997 podala demisi. Necelé
+                    dvaroky ale ovlivnily domácí politiku
+                    na mnoho let dopředu. Vztahy mezi
+                    ODSajejími bývalými členy, kteří ná-
+                    sledně utvořili Unii svobody, i někdej-
+                    šími koaličními partnery z KDU-ČSL,
+                    utrpěly takové šrámy, že strany spolu
+                    následujících víc než osm let nebyly
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r19" type="paragraph">
+            <Coords points="435,763 435,819 224,819 224,763"/>
+            <TextEquiv conf="0.77247">
+                <Unicode>Ondřej Leinert
+                    ondrej.leinert©hn.cz
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r20" type="paragraph">
+            <Coords points="346,2302 346,2324 223,2324 223,2302"/>
+            <TextEquiv conf="0.01549">
+                <Unicode>m Politika</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r21" type="paragraph">
+            <Coords points="1022,894 1022,1103 635,1103 635,894"/>
+            <TextEquiv conf="0.86061">
+                <Unicode>schopny spolupracovat. A občanští
+                    demokraté po prohraných volbách
+                    v roce 1998 místo odchodu do opozi-
+                    ce navázali na dohodu se Zemanem
+                    zroku1996,tentokrát však už i zakot-
+                    venousmluvně - výsledkem byla opo-
+                    ziční smlouva.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r22" type="paragraph">
+            <Coords points="1022,1115 1022,1360 635,1360 635,1115"/>
+            <TextEquiv conf="0.95735">
+                <Unicode>„Součástí opoziční smlouvy byl zá-
+                    vazek, že ODS nevyvolá hlasování
+                    onedůvěře. A lidovci a Unie svobody
+                    na to tehdy neměli ani dost hlasů,“
+                    připomíná politolog Lubomír Kope-
+                    ček z Masarykovy univerzity v Brně.
+                    Výsledkem smlouvy byla pro Zemana
+                    pohodlná většina 137 hlasů.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r23" type="paragraph">
+            <Coords points="1023,1397 1023,1864 635,1864 635,1397"/>
+            <TextEquiv conf="0.90851">
+                <Unicode>Topolánek se bránil pětkrát
+                    Kontrastem proti hladkému fun-
+                    gování první Klausovy a Zemanovy
+                    vlády je vznik kabinetu Mirka Topo-
+                    lánka z ODSvroce 2006. Blok občan-
+                    ských demokratů s KDU-ČSL a Stra-
+                    nou zelených totiž čítal jen sto hla-
+                    sů, tedy stejně jako opoziční ČSSD
+                    s KSČM. Napoprvé Topolánek s ka-
+                    binetem složeným z ODS a nestraní-
+                    ků neuspěl, napodruhé v lednu 2007
+                    sice už důvěru získal, ale jen díky
+                    tomu, že dva sociálnědemokratičtí
+                    poslanci Petr Melčák a Michal Po-
+                    hanka opustili před hlasováním sál.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r24" type="paragraph">
+            <Coords points="1023,1867 1023,2211 636,2211 636,1867"/>
+            <TextEquiv conf="0.95544">
+                <Unicode>ČSSD pak oba vyloučila a její před-
+                    seda Jiří Paroubek mluvil o politické
+                    korupci. A na klidu vládě nepřida-
+                    ly ani spory u koaličních Zelených,
+                    kteří kvůli ztrátě důvěry vyloučili
+                    poslankyni Olgu Zubovou a ta s ně-
+                    kolika dalšími za finanční podpory
+                    mediálního podnikatele a pozdějšího
+                    ředitele TV Barrandov Jaroslava Sou-
+                    kupa založila Demokratickou stranu
+                    zelených.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r25" type="paragraph">
+            <Coords points="1433,768 1433,983 1047,983 1047,768"/>
+            <TextEquiv conf="0.95840">
+                <Unicode>Paroubek pak Topolánkově vládě
+                    znepříjemnil život dosud rekord-
+                    ními pěti pokusy o vyslovení ne-
+                    důvěry. Přičemž ten poslední se
+                    mu v březnu 2009 - během české-
+                    ho předsednictví Evropské unii -
+                    podařil.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r26" type="paragraph">
+            <Coords points="1433,989 1433,1171 1047,1171 1047,989"/>
+            <TextEquiv conf="0.88142">
+                <Unicode>A stal se tak mementemi pro sou-
+                    časnou Fialovu vládu, která čas-
+                    to opakuje, že Česko bude mít bě-
+                    hem svého druhého předsednictví
+                    EU v druhé polovině letošního roku
+                    co napravovat.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r28" type="paragraph">
+            <Coords points="1433,1177 1433,1355 1046,1355 1046,1177"/>
+            <TextEquiv conf="0.95792">
+                <Unicode>Obtížně a nadvakrát vznikala v mi-
+                    nulém volebním období také vláda
+                    Andreje Babiše, šéf ANO to podob-
+                    ně jako Topolánek nejdřív zkoušel
+                    samostatně a pak s koaličním part-
+                    nerem - ČSSD.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r29" type="paragraph">
+            <Coords points="1845,768 1845,983 1458,983 1458,768"/>
+            <TextEquiv conf="0.95594">
+                <Unicode>Nicméně Babiš se při zásadních
+                    hlasováních mohl opřít o toleran-
+                    ci KSČM. V některých případech
+                    mu pomáhala i opoziční SPD a tře-
+                    ba zásadní zrušení superhrubé mzdy
+                    asnížení daně z příjmů pak odhlaso-
+                    val spolu s ODS.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r32" type="paragraph">
+            <Coords points="2282,309 2282,342 1898,342 1898,309"/>
+            <TextEquiv conf="0.96126">
+                <Unicode>HOSPODÁŘSKÉ NOVINY</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r33" type="paragraph">
+            <Coords points="2256,768 2256,920 1870,920 1870,768"/>
+            <TextEquiv conf="0.93559">
+                <Unicode>stři. Fiala naproti tomu jde do vlády
+                    se spojenci, které si prověřil během
+                    společných let v opozici. I proto si Ko-
+                    peček myslí, že má dobré předpokla-
+                    dy vydržet.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r34" type="paragraph">
+            <Coords points="2256,925 2256,1361 1869,1361 1869,925"/>
+            <TextEquiv conf="0.88470">
+                <Unicode>„Zatím to vypadá, že vládní stra-
+                    ny jsou ochotné hledat kompromis
+                    a dohodnout se. Nikdo tak nevypoči-
+                    tatelný, jako byly Věci veřejné, ve Fi-
+                    alově kabinetu není. Určitě to nejsou
+                    Piráti,“naráží Kopeček na to, že Piráti
+                    bynejvíc snesli srovnání se Zelenými
+                    z druhé Topolánkovy vlády. Také teh-
+                    dy šlo o stranu, která měla od nejsil-
+                    nější pravicové ODS ideologicky po-
+                    měrně daleko. Zatímco Topolánkova
+                    vláda se však bez šesti poslanců Zele-
+                    ných obejít nemohla, Fialův kabinet
+                    bysi mohl dovolit o čtyři piráty přijít.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r37" type="paragraph">
+            <Coords points="2256,2186 2256,2205 2171,2205 2171,2186"/>
+            <TextEquiv conf="0.85861">
+                <Unicode>Foto: ČTK</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r38" type="heading">
+            <Coords points="2251,2363 2251,2444 226,2444 226,2363"/>
+            <TextEquiv conf="0.94515">
+                <Unicode>Farský odmítl vládu i kvůli studiu, složení mandátu zvažoval</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r39" type="paragraph">
+            <Coords points="461,2531 461,2586 224,2586 224,2531"/>
+            <TextEquiv conf="0.64031">
+                <Unicode>Michaela Ryšavá
+                    michaela.rysavahn.cz
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r42" type="paragraph">
+            <Coords points="610,3098 610,3218 225,3218 225,3098"/>
+            <TextEquiv conf="0.95958">
+                <Unicode>Když po loňských volbách začal
+                    nový premiér Petra Fiala (ODS) se-
+                    stavovat vládu, patřil Farský mezi
+                    žhavé kandidáty na jejího čle-
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r43" type="paragraph">
+            <Coords points="1022,2531 1022,2841 635,2841 635,2531"/>
+            <TextEquiv conf="0.91893">
+                <Unicode>na. Populární politik byl adeptem
+                    na post ministra obrany, ale dříve se
+                    oněm vzhledem kjeho právnickému
+                    vzdělání mluvilo také jako o možném
+                    šéfovi resortu spravedlnosti. Nako-
+                    necse ale Farský mezi nominanty ne-
+                    objevil. Jeho kolegové to vysvětlovali
+                    osobním nezájmem. „Nechce kvů-
+                    li rodině, má čtyři děti,“ odpovídali
+                    na četné novinářské dotazy.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r44" type="paragraph">
+            <Coords points="1022,2846 1022,3218 635,3218 635,2846"/>
+            <TextEquiv conf="0.95623">
+                <Unicode>Jenže rodina nebyla jediným dů-
+                    vodem. Tím dalším byl také půlroční
+                    studijní pobyt v Americe. V rozho-
+                    voru pro HN to potvrdil sám Far-
+                    ský. „Byla to kombinace důvodů,“
+                    uvedl poslanec s tím, že rozhodnu-
+                    tí o přidělení prestižního stipendia
+                    měl už loni na jaře. A po volbách už
+                    byl téměř rozhodnut, že ho využije.
+                    „Definitivně jsem se ale rozhodl až
+                    v prosinci. Čekal jsem na výsledky
+                    voleb a pakjsem to samozřejmě řešil
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r45" type="paragraph">
+            <Coords points="1433,2532 1433,2809 1047,2809 1047,2532"/>
+            <TextEquiv conf="0.86442">
+                <Unicode>is panem premiérem Petrem Fialou.
+                    Nejdřív totiž člověk napíše projekt,
+                    pak ho musí doplnit třemi doporu-
+                    čeními významných lidí a Petr Fiala
+                    byl jedním z těch, kteří mi to dopo-
+                    ručení dali, společně s Petrem Pithar-
+                    tema Michaelem Žantovským,“ uve-
+                    dl Farský. O stipendium poslanec po-
+                    žádal již před dvěma roky.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r46" type="paragraph">
+            <Coords points="1433,2815 1433,2872 1047,2872 1047,2815"/>
+            <TextEquiv conf="0.81426">
+                <Unicode>Svou cestu přitom oznámil teprve
+                    začátkem týdne, ato na sociálních sí-
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r47" type="paragraph">
+            <Coords points="1097,2964 1097,2986 1052,2986 1052,2964"/>
+            <TextEquiv conf="0.35901">
+                <Unicode>od</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r48" type="paragraph">
+            <Coords points="1377,3005 1377,3213 1052,3213 1052,3005"/>
+            <TextEquiv conf="0.96177">
+                <Unicode>Koaliční smlouva
+                    poslance zavazuje,
+                    aby výkon mandátu
+                    upřednostnili před
+                    vším ostatním.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r49" type="paragraph">
+            <Coords points="1845,2531 1845,3060 1458,3060 1458,2531"/>
+            <TextEquiv conf="0.93775">
+                <Unicode>tích. V úterý se pak vzdal postu před-
+                    sedy poslaneckého klubu Starostů.
+                    Právě na sociálních sítích se ale obje-
+                    vila vlna kritiky, že by se Farský měl
+                    vzdáti poslaneckého mandátu. Posla-
+                    necpřiznává, žena počátku tuto mož-
+                    nost zvažoval, ale okolí ho přesvědči-
+                    loo opaku. „Probíral jsem to s naším
+                    poslaneckým klubem, s panem pre-
+                    miérem, s Petrem Pithartem a samo-
+                    zřejmě s předsedou Starostů Vítem
+                    Rakušanem. Ale všichni tito lidé mi
+                    říkali, že odstoupením mandátu bych
+                    šel proti vůli voličů, ale nepůjdu proti
+                    nítím,žese budu profesně vzdělávat,“
+                    uvedl Farský stím, že mezi kolegy má
+                    obrovskou podporu.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r50" type="paragraph">
+            <Coords points="1845,3066 1845,3217 1458,3217 1458,3066"/>
+            <TextEquiv conf="0.94922">
+                <Unicode>Koaliční partneři už ale takové
+                    nadšení nesdílejí. „Je primární zod-
+                    povědností každého politika vyko-
+                    návat svůj mandát tak, jak slíbil vo-
+                    ličům,“ uvedl lídr koaličních Pirátů
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r51" type="paragraph">
+            <Coords points="2256,2531 2256,2677 1869,2677 1869,2531"/>
+            <TextEquiv conf="0.95664">
+                <Unicode>Ivan Bartoš. Koaliční smlouva Pirátů
+                    aStarostů přitom nové poslance za-
+                    vazuje k tomu, aby výkon mandátu
+                    upřednostnili před všemi dalšími ak-
+                    tivitami včetně studia.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r52" type="paragraph">
+            <Coords points="2256,2689 2256,3029 1869,3029 1869,2689"/>
+            <TextEquiv conf="0.94730">
+                <Unicode>Např. podle nově zvolené místo-
+                    předsedkyně Pirátů Hany Hajnové
+                    měl Farský svůj záměr oznámit už
+                    před volbami. „Já mu to přeji, ale je
+                    to záležitost, která nespadne do klí-
+                    na přes noc. Očekávala bych, že si tu
+                    věcrozmyslí před volbami, případně
+                    ji veřejně sdělí. Nemůže plnohodnot-
+                    ně zvládnout obojí, práce poslance
+                    není jen o tom, že přiletí na důleži-
+                    tájednání,“ uvedla Hajnová pro HN.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r53" type="paragraph">
+            <Coords points="2256,3035 2256,3218 1870,3218 1870,3035"/>
+            <TextEquiv conf="0.95319">
+                <Unicode>Poukázala tím na Farského slib
+                    premiérovi, že na důležitá jednání
+                    bude do Prahy létat. „Vím, že budu
+                    omezený, proto také chci plat posílat
+                    nacharitu,“ doplnil ktomu na včerej-
+                    ší tiskové konferenci poslanec.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r15" type="paragraph">
+            <Coords points="228,894 611,894 611,1234 224,1234 224,957 228,957"/>
+            <TextEquiv conf="0.93496">
+                <Unicode>důvěru dnesvláda požádá za
+                    () situace, kterou premiér Petr
+                    Fiala z ODS označuje za nej-
+                    těžší v polistopadové historii. Kvů-
+                    li covidu, energetické krizi, napětí
+                    mezi Ruskem a NATO či blížícímu
+                    se českému předsednictví Evropské
+                    unii. Pokud však jde o rozložení silve
+                    sněmovně, má Fiala lepší výchozí po-
+                    zici, než měla řada jeho předchůdců
+                    včeské polistopadové historii.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r30" type="paragraph">
+            <Coords points="1458,1020 1776,1020 1776,1052 1845,1052 1845,1360 1458,1360"/>
+            <TextEquiv conf="0.52712">
+                <Unicode>ODS má prověřené spojence
+                    Paralela pro Fialův kabinet by se moh-
+                    la nabízet s vládou Petra Nečase z let
+                    2010až 2013, také ta vznikla relativně
+                    hladce a ještě pohodlnější většinou,
+                    nežje Fialových 108 hlasů. ODSs TOP
+                    09 a Věcmi veřejnými měly 118 man-
+                    dátů. Ale tehdy nově vzniklé Věci ve-
+                    řejné začaly krátce povstupu dovlády
+                    provázet nepříjemné kauzy a stranu
+                    postupně opouštěli poslanci i mini-
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r35" type="heading">
+            <Coords points="1047,2153 2255,2153 2255,2181 2079,2181 2079,2210 1048,2210 1048,2181 1047,2181"/>
+            <TextEquiv conf="0.94453">
+                <Unicode>Šéfové ODSv nesnázích Václav Klaus (vpravo) po volbách v roce 1996 a Mirek Topolánek o deset
+                    let později zažili drama-
+                    tická hlasování o důvěře vládě. Pomáhat jim musela opozice. Fialova vláda to bude mít ve středu
+                    snazší.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r40" type="paragraph">
+            <Coords points="228,2657 610,2657 610,3092 224,3092 224,2720 228,2720"/>
+            <TextEquiv conf="0.89459">
+                <Unicode>oslanec a místopředseda Sta-
+                    Ps Jan Farský (STAN) odjíž-
+                    dí ve čtvrtek na půlroční stu-
+                    dijní pobyt do Ameriky. Fulbrightovo
+                    stipendium na svůj vědecký projekt
+                    získal už na jaře loňského roku, ale
+                    definitivně se rozhodl až v prosin-
+                    ci. Chystaná cesta byla také jedním
+                    z důvodů, proč Farský neusiloval
+                    ožádný ministerský post v nové vlá-
+                    dě Petra Fialy. Někteří politici jeho
+                    nadcházející pobyt v USA kritizují.
+                    Měl podle nich oznámit svou cestu
+                    před volbami.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>

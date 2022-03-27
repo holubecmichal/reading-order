@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PcGts xmlns="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15 http://schema.primaresearch.org/PAGE/gts/pagecontent/2019-07-15/pagecontent.xsd">
+    <Metadata>
+        <Creator></Creator>
+        <Created>2022-01-30T10:14:10</Created>
+        <LastChange>2022-02-16T13:35:11</LastChange>
+    </Metadata>
+    <Page imageFilename="hn-12-1-2022-04.tiff" imageWidth="2480" imageHeight="3507">
+        <ReadingOrder>
+            <UnorderedGroup id="ro357564684568544579089">
+                <OrderedGroup id="g0">
+                    <RegionRefIndexed regionRef="r29" index="0"/>
+                    <RegionRefIndexed regionRef="r30" index="1"/>
+                </OrderedGroup>
+                <OrderedGroup id="g1">
+                    <RegionRefIndexed regionRef="r37" index="0"/>
+                    <RegionRefIndexed regionRef="r36" index="1"/>
+                    <RegionRefIndexed regionRef="r38" index="2"/>
+                    <RegionRefIndexed regionRef="r35" index="3"/>
+                </OrderedGroup>
+                <OrderedGroup id="g75">
+                    <RegionRefIndexed regionRef="r55" index="0"/>
+                    <RegionRefIndexed regionRef="r56" index="1"/>
+                    <RegionRefIndexed regionRef="r57" index="2"/>
+                    <RegionRefIndexed regionRef="r58" index="3"/>
+                    <RegionRefIndexed regionRef="r59" index="4"/>
+                </OrderedGroup>
+            </UnorderedGroup>
+        </ReadingOrder>
+        <SeparatorRegion id="r0">
+            <Coords points="198,442 198,1827 199,1827 199,3212 195,3212 195,1827 194,1827 194,442"/>
+        </SeparatorRegion>
+        <SeparatorRegion id="r1">
+            <Coords points="2281,295 2281,298 201,298 201,295"/>
+        </SeparatorRegion>
+        <SeparatorRegion id="r2">
+            <Coords points="1036,767 1036,2141 1033,2141 1033,767"/>
+        </SeparatorRegion>
+        <SeparatorRegion id="r3">
+            <Coords points="1447,767 1447,2141 1444,2141 1444,767"/>
+        </SeparatorRegion>
+        <ImageRegion id="r4">
+            <Coords points="2262,1066 2262,2074 1454,2074 1454,1066"/>
+        </ImageRegion>
+        <ImageRegion id="r5">
+            <Coords points="1023,2897 1023,2934 1021,2934 1021,2897"/>
+        </ImageRegion>
+        <SeparatorRegion id="r6">
+            <Coords points="1036,2469 1036,3212 1033,3212 1033,2469"/>
+        </SeparatorRegion>
+        <SeparatorRegion id="r7">
+            <Coords points="1447,2470 1447,3212 1444,3212 1444,2470"/>
+        </SeparatorRegion>
+        <SeparatorRegion id="r8">
+            <Coords points="1859,2470 1859,3212 1856,3212 1856,2470"/>
+        </SeparatorRegion>
+        <SeparatorRegion id="r9">
+            <Coords points="2285,513 2285,1863 2286,1863 2286,3213 2282,3213 2282,1863 2281,1863 2281,513"/>
+        </SeparatorRegion>
+        <SeparatorRegion id="r10">
+            <Coords points="2282,3267 2282,3276 200,3276 200,3267"/>
+        </SeparatorRegion>
+        <TextRegion id="r11" type="paragraph">
+            <Coords points="245,251 245,283 219,283 219,251"/>
+            <TextEquiv conf="0.95384">
+                <Unicode>4</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r12" type="paragraph">
+            <Coords points="584,309 584,342 200,342 200,309"/>
+            <TextEquiv conf="0.95392">
+                <Unicode>HOSPODÁŘSKÉ NOVINY</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r13" type="paragraph">
+            <Coords points="325,444 325,465 223,465 223,444"/>
+            <TextEquiv conf="0.92650">
+                <Unicode>mKauza</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r14" type="paragraph">
+            <Coords points="1440,505 1440,585 227,585 227,586 226,586 226,505"/>
+            <TextEquiv conf="0.96459">
+                <Unicode>Bývalý hejtman Rath je na svobodě,</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r15" type="heading">
+            <Coords points="1695,606 1695,687 228,687 228,688 227,688 227,606"/>
+            <TextEquiv conf="0.96630">
+                <Unicode>soud jej ale brzy může poslat zpět do vězení</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r16" type="paragraph">
+            <Coords points="452,763 452,764 453,764 453,819 225,819 225,764 224,764 224,763"/>
+            <TextEquiv conf="0.77935">
+                <Unicode>Marek Pokorný
+                    marek.pokorny(©hn.cz
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r29" type="paragraph">
+            <Coords points="611,1304 611,1707 224,1707 224,1304"/>
+            <TextEquiv conf="0.93027">
+                <Unicode>Tosi však nezařídil sám Rath, po-
+                    žádal o to za něj Svaz pacientů, za-
+                    ložený před 25 lety Lubošem Olejá-
+                    rem. „Myslíme, že může být užitečný
+                    pro veřejnost a své pacienty. Navíc
+                    ho potřebují jeho synové,“ poukázal
+                    na to, že Rath byl před nástupem
+                    trestu lékařem v Hostivici u Prahy,
+                    kde bydlí a kam se má zase vrátit.
+                    Dalším argumentem pro Olejára je,
+                    že Rathovy spolupachatele - manže-
+                    le Kottovy - soud propustil již před
+                    půl rokem.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r30" type="paragraph">
+            <Coords points="611,1713 611,2147 224,2147 224,1713"/>
+            <TextEquiv conf="0.94380">
+                <Unicode>Městský soud v Brně Olejárovu
+                    spolku vyhověl už loni v listopadu.
+                    Soudce Josef Tatíček konstatoval,
+                    že Rath pro nápravu udělal maxi-
+                    mum. Z věznice měl samá kladná
+                    hodnocení a velký počet pochval.
+                    „Byla to dostačující zkušenost,
+                    abych něco podobného v příštích
+                    letech a do konce života neudělal“
+                    uvedl před soudcem Rath.Státní
+                    zástupkyně proti tomu ovšem po-
+                    dala stížnost - Rathova sebereflexe
+                    prý nebyla dostatečná, navíc ještě
+                    nesplatil zhruba polovinu dese-
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r31" type="paragraph">
+            <Coords points="346,2237 346,2259 223,2259 223,2237"/>
+            <TextEquiv conf="0.91366">
+                <Unicode>mFinance</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r32" type="paragraph">
+            <Coords points="1022,894 1022,1076 636,1076 636,1077 635,1077 635,894"/>
+            <TextEquiv conf="0.95997">
+                <Unicode>timilionového peněžitého trestu.
+                    A také mu hrozí další a vyšší trest.
+                    Případ proto putoval k odvolacímu
+                    Krajskému soudu v Brně, který ale
+                    Rathovo propuštění v neveřejném
+                    jednání v úterý ráno potvrdil.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r33" type="paragraph">
+            <Coords points="834,1113 834,1135 635,1135 635,1113"/>
+            <TextEquiv conf="0.96584">
+                <Unicode>Ještě druhá větev</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r34" type="paragraph">
+            <Coords points="1022,1146 1022,1707 635,1707 635,1146"/>
+            <TextEquiv conf="0.94414">
+                <Unicode>Za několik měsíců se tedy bývalý
+                    středočeský hejtman - a krátce i mi-
+                    nistr zdravotnictví - může do věze-
+                    ní opět vrátit. Vrchní soud v Praze
+                    bude brzy projednávat druhou větev
+                    jeho korupční kauzy. Kvůli urychlení
+                    azjednodušení trestního řízení totiž
+                    policisté a žalobci rozdělili vyšetřo-
+                    vání zmanipulovaných a uplacených
+                    zakázek ve Středočeském kraji z dob
+                    Ratha na dvě části. Prvoinstanční
+                    soud bývalému členovi ČSSD před-
+                    loni v lednu v této druhé větvi pro-
+                    dloužil původní trest z první větve
+                    o rok na celkových osm let a udělil
+                    mu nově souhrnný osmnáctimilio-
+                    nový peněžitý trest, odvolací jednání
+                    bude druhý dubnový týden.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r35" type="paragraph">
+            <Coords points="1022,1713 1022,2147 636,2147 636,2148 635,2148 635,1713"/>
+            <TextEquiv conf="0.95498">
+                <Unicode>Před soudem v této druhé větvi
+                    stojí kromě Ratha i dalších osm lidí
+                    a stejný počet firem v čele s Metro-
+                    stavem. Kottovi dostali stejně jako
+                    Rath souhrnný trest osm let vězení
+                    a každý z manželů má zaplatit cel-
+                    kem 20 milionů korun. Metrostavu
+                    soud zakázal ucházet se tři roky ove-
+                    řejné zakázky a také přikázal zaplatit
+                    10 milionů. Úplatky v této druhé vět-
+                    vi podle soudu přesáhly 60 milionů
+                    korun - tedy zhruba to, co mají pr-
+                    voinstančně odsouzení zaplatit jako
+                    peněžité tresty.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r36" type="paragraph">
+            <Coords points="1433,768 1433,769 1434,769 1434,920 1047,920 1047,768"/>
+            <TextEquiv conf="0.96196">
+                <Unicode>Policie Ratha zatkla takřka před
+                    deseti lety, počátkem května 2012,
+                    s krabicí od vína se sedmi miliony
+                    korun, když vycházel z domu svých
+                    přátel, manželů Kottových.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r37" type="paragraph">
+            <Coords points="1434,925 1434,1229 1047,1229 1047,925"/>
+            <TextEquiv conf="0.90097">
+                <Unicode>Případse relativně rychle, již pone-
+                    celých jedenácti měsících, dostal
+                    k soudu, kde jeho první větev začal
+                    řešit soudce Robert Pacovský. Státní
+                    zástupce Petr Jirát v ní napočítal je-
+                    denácti obžalovaným osm zmanipu-
+                    lovaných zakázek, sám Rath podle něj
+                    přijalna úplatcích nejméně 16 milionů
+                    korun, dalších nejméně 41 milionů prý
+                    získali Kateřina a Petr Kottovi.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r38" type="paragraph">
+            <Coords points="1434,1240 1434,1481 1046,1481 1046,1240"/>
+            <TextEquiv conf="0.95365">
+                <Unicode>Jenže před soudem se případ začal
+                    nečekaně komplikovat - především
+                    kvůli samotnému Rathovi a jeho
+                    údajným zdravotním problémům.
+                    Exhejtman také vynesení rozsudku
+                    natahoval různými obstrukcemi, kdy
+                    si například několikrát vyměnil ad-
+                    vokáta.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r39" type="paragraph">
+            <Coords points="1434,1492 1434,1739 1046,1739 1046,1492"/>
+            <TextEquiv conf="0.95349">
+                <Unicode>Výsledkem bylo, že tresty padly až
+                    vpolovině roku 2015. Rath si vyslechl
+                    trest 8,5roku vězení, manželé Kotto-
+                    vi dostali po 7,5 roku. Jediný podmí-
+                    něný trest dostala majitelka staveb-
+                    ní firmy Fisa Ivana Salačová, která
+                    přijala roli spolupracující obviněné
+                    azbylé odsouzené pomohla usvědčit.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r40" type="paragraph">
+            <Coords points="1265,1775 1265,1802 1046,1802 1046,1775"/>
+            <TextEquiv conf="0.96618">
+                <Unicode>Válka o odposlechy</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r41" type="paragraph">
+            <Coords points="1433,1807 1433,2142 1046,2142 1046,1807"/>
+            <TextEquiv conf="0.95562">
+                <Unicode>Všichni odsouzení v první větvi se
+                    odvolali a případ skončil u soudce
+                    vrchního soudu Pavla Zelenky. Ten
+                    verdikt zrušil a vrátil případ prvoin-
+                    stančnímu soudu. Klíčový důkaz -
+                    odposlechy - byl podle něj pořízen
+                    v rozporu se zákonem. A prvoin-
+                    stanční soud tak podle něj měl ob-
+                    žalované usvědčit bez pomoci od-
+                    poslechů. V červnu 2017 ale Nejvyšší
+                    soud označil Zelenkovo rozhodnutí
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r42" type="paragraph">
+            <Coords points="1844,768 1844,769 1845,769 1845,825 1458,825 1458,768"/>
+            <TextEquiv conf="0.70578">
+                <Unicode>za nezákonné - odposlechy prý byly
+                    vpořádku.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r43" type="paragraph">
+            <Coords points="1845,831 1845,978 1458,978 1458,831"/>
+            <TextEquiv conf="0.95341">
+                <Unicode>Případ přesto musel znovu pro-
+                    jednat Krajský soud v Praze. Rath se
+                    i nadále snažil verdikt oddálit. Po-
+                    dával neustále námitky podjatosti
+                    soudce Pacovského.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r44" type="paragraph">
+            <Coords points="1845,989 1845,1046 1458,1046 1458,989"/>
+            <TextEquiv conf="0.96586">
+                <Unicode>Ten ale nakonec všem jedenácti
+                    obžalovaným v červnu 2018 rozdal
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r45" type="paragraph">
+            <Coords points="2281,316 2281,333 1955,333 1955,316"/>
+            <TextEquiv conf="0.93158">
+                <Unicode>STŘEDA 12. LEDNA 2022 WWW.HN.CZ</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r46" type="paragraph">
+            <Coords points="2255,768 2255,769 2256,769 2256,1045 1870,1045 1870,768"/>
+            <TextEquiv conf="0.96085">
+                <Unicode>stejné tresty jako o tři roky dříve.
+                    Případ poté znovu skončil u sená-
+                    tu soudce Vrchního soudu v Praze
+                    Pavla Zelenky. Ten nakonec většině
+                    obžalovaných trest v červnu 2019
+                    snížil. Rathovi na sedm let, manže-
+                    lům Kottovým na šest let. Všichni
+                    nastoupili do vězení v průběhu lis-
+                    topadu 2019.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r49" type="paragraph">
+            <Coords points="2256,2123 2256,2142 2171,2142 2171,2123"/>
+            <TextEquiv conf="0.80993">
+                <Unicode>Foto: ČTK</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r50" type="heading">
+            <Coords points="2217,2298 2217,2380 226,2380 226,2381 225,2381 225,2298"/>
+            <TextEquiv conf="0.94747">
+                <Unicode>Městům chybí peníze na investice. Stanjura pomoc odmítá</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r51" type="paragraph">
+            <Coords points="515,2466 515,2521 223,2521 223,2466"/>
+            <TextEquiv conf="0.62162">
+                <Unicode>Jakub Mikel —
+                    jakub.mikelohn.cz
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r54" type="paragraph">
+            <Coords points="611,2878 611,3055 224,3055 224,2878"/>
+            <TextEquiv conf="0.88669">
+                <Unicode>Nový ministr financí Zbyněk Sta-
+                    njura (ODS) jde ve stopách své před-
+                    chůdkyně ve funkci a o změně neu-
+                    važuje. V takovém případě se města
+                    obávají, že nebudou mít dost peněz
+                    na investice.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r55" type="paragraph">
+            <Coords points="611,3066 611,3218 224,3218 224,3066"/>
+            <TextEquiv conf="0.94758">
+                <Unicode>Například olomoucká radnice
+                    roky řešila, zda si může dovolit
+                    rozšíření tramvajové trati na tam-
+                    ní sídliště Nové Sady. Nakonec si
+                    v roce 2019 město kvůli plánova-
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r56" type="paragraph">
+            <Coords points="1023,2469 1023,2620 1021,2620 1021,2651 636,2651 636,2469"/>
+            <TextEquiv conf="0.96311">
+                <Unicode>ným investicím vzalo úvěr 450 mi-
+                    lionů korun. Jedním z důvodů bylo
+                    právě i prodloužení tramvajových
+                    kolejí. Podle tamních politiků však
+                    radnice takto nemůže dlouhodobě
+                    hospodařit.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r57" type="paragraph">
+            <Coords points="1021,2657 1021,2872 635,2872 635,2657"/>
+            <TextEquiv conf="0.95736">
+                <Unicode>Primátoři podobně velkých měst
+                    proto tlačí na změnu takzvaného
+                    rozpočtového určení daní. To udá-
+                    vá,kam a zajakých podmínek putují
+                    výnosy z daní. Systém prošel v minu-
+                    losti několika úpravami tak, aby byl
+                    co nejspravedlivější.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r58" type="paragraph">
+            <Coords points="1021,2878 1021,3000 1022,3000 1022,3091 635,3091 635,2878"/>
+            <TextEquiv conf="0.95740">
+                <Unicode>Menší obce si polepšily, špat-
+                    ně na tom nejsou ani nejlidnatější
+                    města. Pro statisícová města, jako
+                    je Olomouc či Liberec, která z minu-
+                    losti mají miliardové dluhy, úpravy
+                    znamenaly, že naopak o peníze při-
+                    cházejí.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r59" type="paragraph">
+            <Coords points="1022,3098 1022,3218 636,3218 636,3219 635,3219 635,3098"/>
+            <TextEquiv conf="0.96539">
+                <Unicode>„Kdybychom měli koeficient pře-
+                    počtu na jednoho obyvatele stejný
+                    jako například Plzeň nebo Ostrava,
+                    máme v Liberci roční rozpočet ni-
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r60" type="paragraph">
+            <Coords points="1434,2469 1434,2470 1435,2470 1435,2740 1047,2740 1047,2469"/>
+            <TextEquiv conf="0.95446">
+                <Unicode>koliv 2,5, ale 3,5 miliardy korun,“ po-
+                    pisuje liberecký primátor Jaroslav
+                    Zámečník (Starostové pro Liberecký
+                    kraj). Olomouc pak ročně přichází
+                    zhruba o 150 milionů korun. Právě
+                    její primátor Miroslav Žbánek z hnu-
+                    tí ANO patří mezi hlasité zastánce
+                    další úpravy rozpočtového určení
+                    daní.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r61" type="paragraph">
+            <Coords points="1432,2752 1432,2835 1047,2835 1047,2752"/>
+            <TextEquiv conf="0.95318">
+                <Unicode>„Považuji to za jednu ze svých pri-
+                    orit,“ říká Žbánek, který má v rámci
+                    Svazu měst a obcí na starosti statu-
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r62" type="paragraph">
+            <Coords points="1097,2964 1097,2986 1052,2986 1052,2964"/>
+            <TextEquiv conf="0.72422">
+                <Unicode>m</Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r65" type="paragraph">
+            <Coords points="1844,2466 1844,2467 1845,2467 1845,2778 1458,2778 1458,2466"/>
+            <TextEquiv conf="0.95161">
+                <Unicode>tární města. Čeká ho ale jednání sve-
+                    teránem debat orozpočtovém určení
+                    daní- ministrem financí a někdejším
+                    opavským primátorem Stanjurou.
+                    Ten se problematikou zabýval už
+                    v předchozích letech, když zastával
+                    stejnou pozici ve Svazu měst a obcí,
+                    jakou má dnes Žbánek. Pro olomouc-
+                    kého primátora to však neznamená
+                    žádnou výhodu.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r66" type="paragraph">
+            <Coords points="1845,2785 1845,3087 1458,3087 1458,2785"/>
+            <TextEquiv conf="0.95052">
+                <Unicode>Stanjura zastává stejný postoj,
+                    který měla už jeho předchůdkyně
+                    v ministerské funkci Alena Schille-
+                    rová (ANO). „Já tam žádný prostor
+                    prozměnu nevidím. Známe konkrét-
+                    ní finanční zdraví některých měst
+                    i obcí a obecně na tom nejsou špat-
+                    ně,“ míní Stanjura. „Ten systém po-
+                    važuji za funkční a spravedlivý,“ do-
+                    dává ministr.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r67" type="paragraph">
+            <Coords points="1845,3098 1845,3218 1458,3218 1458,3098"/>
+            <TextEquiv conf="0.96124">
+                <Unicode>Při současném stavu veřejných fi-
+                    nancí, kdy hospodaření státu skon-
+                    čilo za loňský rok schodkem 420
+                    miliard korun, je podle něj iluzorní,
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r68" type="paragraph">
+            <Coords points="2256,2469 2256,2470 2257,2470 2257,2714 1869,2714 1869,2469"/>
+            <TextEquiv conf="0.91510">
+                <Unicode>aby se peníze pro města navyšova-
+                    la. „Nemohu vyloučit, pokud by se
+                    v rámci samospráv domluvili, že si
+                    podíl rozdělí jinak, tak by to vláda
+                    akceptovala,“ uvádí Stanjura s tím,
+                    želzejen těžko očekávat, že se jedna
+                    skupina měst dobrovolně vzdá svých
+                    podílů ve prospěch jiných.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r69" type="paragraph">
+            <Coords points="2257,2717 2257,2966 1869,2966 1869,2717"/>
+            <TextEquiv conf="0.94884">
+                <Unicode>S tím nepočítá ani Žbánek. Věří
+                    ale, že bude možné najít systém,
+                    který by Olomouci i dalším statutár-
+                    ním městům finančně ulevil. Podle
+                    libereckého primátora Zámečníka
+                    je vládu potřeba přesvědčit o tom,
+                    že změna rozdělování peněz je pro
+                    města nezbytná.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r70" type="paragraph">
+            <Coords points="2257,2972 2257,3213 1869,3213 1869,2972"/>
+            <TextEquiv conf="0.96085">
+                <Unicode>Ve spolupráci s Libereckým kra-
+                    jem hodlá představit i konkrétní
+                    změny zákona. „Bude-li třeba, chci
+                    ve spolupráci s dalšími kolegy pri-
+                    mátory, kterých se téma rovněž
+                    týká, iniciovat ještě letos také se-
+                    tkání u ministra financí,“ uvádí pri-
+                    mátor Zámečník.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r17" type="paragraph">
+            <Coords points="611,894 611,1297 224,1297 224,989 244,989 244,896 310,896 310,894"/>
+            <TextEquiv conf="0.93678">
+                <Unicode>V roušce,s taškou vjedné ruce
+                    a krabicí od televize v druhé
+                    a bez jediného slova opustil
+                    včera David Rath krátce před po-
+                    lednem po 27 měsících věznici v Br-
+                    ně-Bohunicích. Protože již předtím
+                    bývalý středočeský hejtman strávil
+                    18 měsíců ve vyšetřovací vazbě, od-
+                    pykal si víc než polovinu sedmile-
+                    tého trestu, uloženého za korupci
+                    při zadávání zakázek Středočeského
+                    kraje. A mohl tak požádat o předčas-
+                    né propuštění.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r52" type="paragraph">
+            <Coords points="610,2594 610,2595 611,2595 611,2872 224,2872 224,2657 228,2657 228,2594"/>
+            <TextEquiv conf="0.79141">
+                <Unicode>Do sněmovny se loni dostalo
+                    85 politiků, kteří mají zkuše-
+                    nosti s řízením měst a obcí.
+                    Někteří primátoři statisícových měst
+                    proto doufali, že to povede k úpravě
+                    systému, podle něhož se mezi rad-
+                    nice rozdělují peníze vybrané na da-
+                    ních. Očekávání však zůstanou prav-
+                    děpodobně nenaplněná.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r63" type="paragraph">
+            <Coords points="1283,3005 1283,3049 1383,3049 1383,3213 1052,3213 1052,3049 1053,3049 1053,3005"/>
+            <TextEquiv conf="0.95652">
+                <Unicode>Olomouc si už
+                    kvůli plánovaným
+                    investicím vzala
+                    vroce 2019 úvěr 450
+                    milionů korun.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+        <TextRegion id="r47" type="caption">
+            <Coords points="2254,2094 2254,2119 1740,2119 1740,2147 1458,2147 1458,2123 1459,2123 1459,2094"/>
+            <TextEquiv conf="0.95185">
+                <Unicode>David Rath sice včera opustil věznici po odpykání poloviny sedmiletého trestu,
+                    ale brzy se do ní může vrátit.
+                </Unicode>
+            </TextEquiv>
+        </TextRegion>
+    </Page>
+</PcGts>
