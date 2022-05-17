@@ -1,26 +1,32 @@
-import torch
-
-from .base import Base
+from .base import Base, STRETCH_LEFT
 
 
 class TokenEvaluate(Base):
     def _get_candidate_tokens(self, position, read_tokens_count, candidate_tokens_count):
+        """
+        Metoda pro ziskani tokenu z dane pozice a dle pozadovane delky
+        """
+
         candidates = []
 
         for i in range(0, len(self.offsets)):
-            offset_val = self.offsets[i]
-
-            if offset_val == -1:
-                offset_val = torch.randint(0, len(self.content), (1,)).item()
-
-            offset = position + offset_val + read_tokens_count
-            tokens = self.content_token.get(offset, candidate_tokens_count)
+            start_position = self._get_candidate_start_position(self.offsets[i], position, i, read_tokens_count)
+            tokens = self.content_token.get(start_position, candidate_tokens_count)
             candidates.append(tokens)
 
         return candidates
 
     def _read(self, position, read_count):
-        read_tokens = self.content_token.get(position, read_count)
+        """
+        Inicializace skrytych stavu textovym obsahem
+        """
+
+        if self.read_stretch == STRETCH_LEFT:
+            real_position = position - read_count
+            read_tokens = self.content_token.get(real_position, read_count)
+        else:
+            read_tokens = self.content_token.get(position, read_count)
+
         return self.model.read_tokens(read_tokens)
 
     def _get_pieces_count(self):

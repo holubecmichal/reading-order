@@ -7,6 +7,10 @@ from .constants import get_vocab_path, get_data_path
 
 
 class Vocabulary(spm.SentencePieceProcessor):
+    """
+    Trida dedi SentencePiece processor a rozsiruje ji o pomocnou metodu pro prevod textu na tokeny
+    """
+
     def text_to_token_tensor(self, text):
         tokens = self.Encode(text)
 
@@ -17,6 +21,11 @@ class Vocabulary(spm.SentencePieceProcessor):
 
 
 def load_vocab(root_folder: str, source: str, size: int) -> Vocabulary:
+    """
+    Funkce pro nacteni slovniku.
+    Pokud slovnik neexistuje, je ze Source vytvoren pomoci SentencePiece dle pozadovane velikosti Size
+    """
+
     prefix, model, vocab = get_vocab_path(root_folder, source, size)
     input = get_data_path(root_folder, source)
 

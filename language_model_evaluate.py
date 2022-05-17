@@ -1,36 +1,42 @@
 import time
-
 import torch
 
+"""
+Skript pro vyhodnoceni chovani jazykoveho modelu
+"""
+
+from language_model.carrier import cs_pair_sentences, cs_vocab
+from language_model.content import filter_by_shift_length, shift_pair, SHIFT_LEFT, SHIFT_RIGHT, shift_pairs
+from language_model.evaluate.shift_token_evaluate import ShiftTokenEvaluate
+from language_model.evaluate.text_evaluate import TextEvaluate
 from language_model.evaluate.token_evaluate import TokenEvaluate
 
-device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
+device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 start_time = time.time()
 
-lengths = list(range(2, 8)) + list(range(8, 16, 2)) + list(range(16, 32, 4)) + list(range(32, 65, 8))
+lengths = list(range(1, 8)) + list(range(8, 16, 2)) + list(range(16, 32, 4)) + list(range(32, 65, 8))
 
 samples = 10
 iters = 1
 
-offsets = list(range(0, 14))
-for i in range(0, 1):
-    per_iter = samples // iters
-    start_position = i * per_iter
-    stop_position = i * per_iter + per_iter
+offsets = [0] + [-1] * 15
+# seed pro randint - zreprodukovatelnost
+torch.manual_seed(1111)
 
-    # instance = TextEvaluate.TextEvaluate(device=device, samples=10000, read_lengths=lengths, candidate_lengths=lengths, offsets=offsets)
-    # instance.eval(start_position, stop_position)
+# experiment navaznosti vet
+# experiment pro vyhodnoceni chovani, pokud jazykovy model odhaduje navaznost vet
+# pairs = default_pair_sentences(pair_length=64, shift=5)
+# left_shifted = shift_pairs(pairs, dir=SHIFT_LEFT, shift=5)
+# right_shifted = shift_pairs(pairs, dir=SHIFT_RIGHT, shift=5)
+# instance = ShiftTokenEvaluate(pairs=left_shifted, device=device, read_lengths=lengths, candidate_lengths=[64], offsets=offsets)
 
-    # instance = TextEvaluate(device=device, samples=10, read_lengths=lengths, candidate_lengths=lengths, offsets=offsets)
-    # results = instance.eval(start_position, stop_position)
+# experiment s delkou textu
+# instance = TextEvaluate(device=device, samples=10, read_lengths=lengths, candidate_lengths=[64], offsets=offsets)
 
-    instance = TokenEvaluate(device=device, samples=10, read_lengths=[45], candidate_lengths=[5], offsets=offsets)
-    results = instance.eval()
-
-    name = '_'.join(["random_token", str(instance.vocab.vocab_size()), str(samples), "part" + str(i + 1)])
-    name += ".pkl"
-    results.save(name)
-
-    del results
+# experiment s delkou tokenu
+instance = TokenEvaluate(device=device, samples=10000, read_lengths=lengths, candidate_lengths=[64], offsets=offsets)
+instance.keep_rand_positions = True
+results = instance.eval()
+results.save("random_token_16_20000_10000.pkl")
 
 print('| time: {:5.2f}s |'.format(time.time() - start_time))

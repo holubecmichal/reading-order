@@ -1,7 +1,11 @@
 from typing import Optional
 
 
-class Item():
+class Item(object):
+    """
+    Rozhrani pro definici prvku reading order
+    """
+
     def get_id(self) -> str: ...
 
     def set_successor(self, successor: 'Item'): ...
@@ -15,9 +19,3 @@ class Item():
     def get_first(self) -> Optional['Item']: ...
 
     def get_last(self) -> Optional['Item']: ...
-
-
-class Candidate:
-    def get_id(self) -> str: ...
-
-    def get_text(self) -> str: ...

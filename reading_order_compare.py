@@ -4,6 +4,10 @@ import os
 from document import page_xml
 from reading_order.metric.prima import compare
 
+"""
+Skript pro porovnani dvou posloupnosti a vypocet metriky Prima
+"""
+
 parser = argparse.ArgumentParser(description='Reading order compare')
 parser.add_argument('--ground_truth', type=str, required=True)
 parser.add_argument('--actual', type=str, required=True)

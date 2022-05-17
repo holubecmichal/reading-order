@@ -9,7 +9,7 @@ class Collection(OriginalCollection):
         for item in self.contents:
             grouped_by = item[key]
             if grouped_by not in grouped.keys():
-                grouped[grouped_by] = [item]
+                grouped[grouped_by] = self.make([item])
             else:
                 grouped[grouped_by].append(item)
         return grouped

@@ -1,17 +1,22 @@
 from shapely.geometry import Polygon
-from reading_order.stubs import Candidate
-from spatial.stubs import Region as StubRegion
+from spatial.stubs import Spatial as SpatialStub
 
 
-class Region(StubRegion):
+class Region(SpatialStub):
+    """Region"""
     def get_id(self) -> str: ...
 
 
-class TextRegion(Region, Candidate): ...
+class TextRegion(Region):
+    """Text region"""
+    def get_text(self) -> str: ...
 
 
 class Document(object):
-    def get_regions(self) -> {StubRegion}: ...
+    """
+    Definice metod pro zpracovani vstupniho dokumentu
+    """
+    def get_regions(self) -> {Region}: ...
 
     def get_text_regions(self) -> {TextRegion}: ...
 

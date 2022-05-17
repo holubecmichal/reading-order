@@ -1,12 +1,14 @@
-import os
-
 import torch
 
-from .constants import CS_DATA, get_data_path
+from .constants import get_data_path
 from .vocabulary import Vocabulary
 
 
 class ContentTokens(object):
+    """
+    Trida nese obsah korpusu v podobe tokenu
+    """
+
     def __init__(self, filename: str, tokens: torch.Tensor):
         self._filename = filename
         self._tokens = tokens
@@ -16,6 +18,10 @@ class ContentTokens(object):
         return self._tokens_count
 
     def get(self, position, tokens_count):
+        """
+        Nacte a vrati sekvenci tokenu dle pozice a pozadovane delky
+        """
+
         stop = (position + tokens_count)
 
         if stop > self._tokens_count:
@@ -50,6 +56,10 @@ class ContentTokens(object):
 
 
 def load_content_tokens(root_folder: str, filename: str, vocab: Vocabulary, device):
+    """
+    Funkce pro nacteni a prevedeni obsahu souboru na tokeny
+    """
+
     filepath = get_data_path(root_folder, filename)
 
     with open(filepath, 'r', encoding="utf8") as f:
@@ -63,5 +73,5 @@ def load_content_tokens(root_folder: str, filename: str, vocab: Vocabulary, devi
             idss.append(torch.tensor(ids).type(torch.int64))
         ids = torch.cat(idss)
 
-    ids.to(device)
+    ids = ids.to(device)
     return ContentTokens(filename, ids)

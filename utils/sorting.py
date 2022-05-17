@@ -1,14 +1,4 @@
 from collections import defaultdict
-from graphlib import TopologicalSorter
-
-
-def original_topological_sort(before_in_reading: [tuple]):
-    ts = TopologicalSorter()
-    for t in before_in_reading:
-        ts.add(t[1], t[0])
-
-    return ts.static_order()
-
 
 def topological_sort(before_in_reading: [tuple]):
     grp = Graph(len(before_in_reading))

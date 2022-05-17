@@ -1,5 +1,9 @@
 import os
 
+"""
+Soubor obsahuje primarne pomocne metody pro nacteni modelu, obsahu trenovaciho korpusu, slovniku SentencePiece
+"""
+
 DIR_MODELS = 'models'
 DIR_VOCAB = 'vocabulary'
 DIR_DATA = 'data/'

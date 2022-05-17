@@ -8,7 +8,7 @@ import pandas as pd
 class UnknownRelationship(Exception):
     ...
 
-
+# Vztahy
 REL_SAME = '='
 REL_SUCCESSOR = '->'
 REL_PREDECESSOR = '<-'
@@ -18,7 +18,7 @@ REL_SOMEWHERE_AFTER = '<-<-'
 REL_FULLY_UNORDERED = '--'
 REL_NOT_DEFINED = 'n.d.'
 
-
+# Matice penalizaci
 READING_ORDER_PENALTIES = {
     REL_SUCCESSOR:                    {REL_SUCCESSOR: 0,  REL_PREDECESSOR: 40, REL_FULLY_UNORDERED: 10, REL_NEITHER_DIRECT_NOR_UNORDERED: 20, REL_NOT_DEFINED: 0, REL_SOMEWHERE_BEFORE: 0,  REL_SOMEWHERE_AFTER: 10},
     REL_PREDECESSOR:                  {REL_SUCCESSOR: 40, REL_PREDECESSOR: 0,  REL_FULLY_UNORDERED: 10, REL_NEITHER_DIRECT_NOR_UNORDERED: 20, REL_NOT_DEFINED: 0, REL_SOMEWHERE_BEFORE: 10, REL_SOMEWHERE_AFTER: 0},
@@ -31,23 +31,36 @@ READING_ORDER_PENALTIES = {
 
 
 def check_relationship(source: Item, checking: Item) -> str:
+    """
+    Funkce pro porovnani a navraceni vztahu metriky Prima.
+    Argumenty jsou polozky reading order, mezi kterymi se zkouma vzajemny vztah
+    """
+
     if source == checking:
         return REL_SAME
 
     if source.get_successor() and source.get_successor() == checking:
+        # primy naslednik
         return REL_SUCCESSOR
 
     if source.get_predecessor() and source.get_predecessor() == checking:
+        # primy predchudce
         return REL_PREDECESSOR
 
     if source.get_parent() == checking.get_parent():
+        # prvky maji stejneho rodice a jsou ve stejne skupine
+        # zkouma se, jestli v usporadane nebo neusporadane
         if source.get_parent().is_ordered():
             return REL_NEITHER_DIRECT_NOR_UNORDERED
         elif source.get_parent().is_unordered():
             return REL_FULLY_UNORDERED
 
+
+    # hleda se nejblizsi spolecny predek
     ancestor = get_nearest_ancestor(source, checking)
+    # pokud je neusporadany
     if ancestor.is_unordered():
+        # pokud jsou oba prvky v usporadane skupine
         if source.get_parent().is_ordered() and checking.get_parent().is_ordered():
             if source.get_predecessor() is None and checking.get_successor() is None:
                 return REL_SOMEWHERE_AFTER
@@ -58,17 +71,25 @@ def check_relationship(source: Item, checking: Item) -> str:
 
         return REL_FULLY_UNORDERED
 
+    # pokud je nejblizsi spolecny predek usporadany
     if ancestor.is_ordered():
+        # vytahnou se skupiny, ktere predek obsahuje
         groups = list(ancestor.get_only_groups().values())
 
+        # pokud je jeden z prvku ve stromu vice zanorezny
         if source.get_level() < checking.get_level():
+            # vytahne se skupina, do ktere spada checking
             checking = get_group_which_has_item(groups, checking.get_id())
 
+            # skupina je neusporadana
             if checking.is_unordered():
                 return REL_SOMEWHERE_BEFORE
 
+            # pokud je skupina usporadana, tato skupina se vezme a rekurzivne se porovna se source
+            # dokud neni nalezeno pravidlo, pro ktere je mozne definovat vztah
             return check_relationship(source, checking)
         elif source.get_level() > checking.get_level():
+            # stejne jako predchozi vetev
             source = get_group_which_has_item(groups, source.get_id())
 
             if source.is_unordered():
@@ -82,10 +103,15 @@ def check_relationship(source: Item, checking: Item) -> str:
 
 
 def relationship_matrix(reading_order: ReadingOrder):
+    """
+    Funkce, ktera se stara o sestaveni struktury vztahu pro dany reading order
+    """
+
     items = reading_order.get_all_items()
     items.sort(key=lambda item: item.get_id())
     matrix = []
 
+    # vzajemne porovnani kazdy s kazdym
     for source in items:
         row = [source.get_id()]
 
@@ -99,6 +125,9 @@ def relationship_matrix(reading_order: ReadingOrder):
 
 
 def matrix_to_pandas(matrix):
+    """
+    Prevod struktury do Pandas
+    """
     matrix = np.array(matrix)
     ids = matrix[:, 0]
 
@@ -106,6 +135,10 @@ def matrix_to_pandas(matrix):
 
 
 def str_error(lid, rid, arelation, grelation):
+    """
+    Pomocna funkce pro vypis identifikovanych chyb
+    """
+
     return 'Ground Truth region {} - region {}: Relation [{}] instead of [{}]'.format(lid,
                                                                                       rid,
                                                                                       arelation,
@@ -113,12 +146,21 @@ def str_error(lid, rid, arelation, grelation):
 
 
 def cmp_index(index1, index2):
+    """
+    Pomocna funkce pro vytvoreni indexu
+    """
+
     lst = [index1, index2]
     lst.sort()
     return '-'.join(lst)
 
 
 def is_exception(result, row_index, col_index, ground_truth: ReadingOrder, actual: ReadingOrder):
+    """
+    Funkce, ktera definuje pro nektere vztahy vyjimky.
+    Tyto vyjimky byly vypozorovany pri testovani vuci referencnimu nastroji Aletheia
+    """
+
     if result['ground_truth'] == REL_SUCCESSOR and result['actual'] == REL_FULLY_UNORDERED:
         gleft = ground_truth.get_by_id(row_index)
         gright = ground_truth.get_by_id(col_index)
@@ -198,6 +240,10 @@ def is_exception(result, row_index, col_index, ground_truth: ReadingOrder, actua
 
 
 def fill_with_not_defined(ids, df) -> DataFrame:
+    """
+    Funkce pro vytvoreni noveho prvku v ramci DataFrame, ktery puvodne neexistoval v ground truth
+    """
+
     for id in ids:
         df[id] = REL_NOT_DEFINED
         df.loc[id] = REL_NOT_DEFINED
@@ -210,6 +256,10 @@ def fill_with_not_defined(ids, df) -> DataFrame:
 
 
 def groups_changes(id, ground_truth: ReadingOrder, actual: ReadingOrder, cmp) -> bool:
+    """
+    Pomocna funkce pro kontrolu vztahu prvku v ground truth a identifikovane posloupnosti
+    """
+
     gitem = ground_truth.get_by_id(id)
 
     if gitem is None:

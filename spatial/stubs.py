@@ -2,38 +2,35 @@ import shapely.geometry
 from shapely.geometry import Polygon, Point
 
 
-class Spatial:
-    def get_coords(self) -> [tuple]: ...
+class Spatial(object):
+    """
+    Definice metod pro podporu prostorove analyzy, s predpripravenym zpracovanim
+    """
 
-    def get_polygon(self) -> Polygon: ...
-
-    def get_box(self) -> Polygon: ...
-
-    def min_x(self): ...
-
-    def min_y(self): ...
-
-    def max_x(self): ...
-
-    def max_y(self): ...
-
-    def centroid(self): ...
-
-
-class Region(Spatial):
     def __init__(self):
         self._polygon = None
         self._box = None
         self._box_bounds = None
         self._centroid = None
 
+    def get_coords(self) -> [tuple]:
+        ...
+
     def get_polygon(self) -> Polygon:
+        """
+        Vraci polygon elementu, respektive hranice elementu
+        """
+
         if self._polygon is None:
             self._polygon = Polygon(self.get_coords())
 
         return self._polygon
 
     def get_box(self) -> Polygon:
+        """
+        Polygon prevedeny na obdelnik
+        """
+
         if self._box is None:
             self._box = shapely.geometry.box(*self.get_polygon().bounds)
 

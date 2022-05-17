@@ -2,7 +2,7 @@ import unittest
 import os
 
 from document import page_xml
-from reading_order.metric.prima import compare, calculate_penalty, calculate_penalty_percentage, results_to_string
+from reading_order.metric.prima import compare
 
 DIR = os.path.dirname(os.path.realpath(__file__))
 DATA_PATH = os.path.join(DIR, 'data')

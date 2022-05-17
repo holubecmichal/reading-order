@@ -13,6 +13,13 @@ from language_model.content_tokens import load_content_tokens
 from language_model.constants import get_model_path
 from language_model.vocabulary import load_vocab
 
+# --emsize=400 --nhid=1700 --cuda=1 --vocab_size=20000
+
+"""
+Skript pro trenovani jazykoveho modelu
+Prevzato z https://github.com/pytorch/examples/tree/main/word_language_model a upraveno pro ucely prace
+"""
+
 parser = argparse.ArgumentParser(description='PyTorch Wikitext-2 RNN/LSTM/GRU/Transformer Language Model')
 parser.add_argument('--root', type=str, default='./cs')
 
@@ -44,8 +51,6 @@ parser.add_argument('--cuda', type=int,
                     help='use CUDA')
 parser.add_argument('--log-interval', type=int, default=200, metavar='N',
                     help='report interval')
-parser.add_argument('--onnx-export', type=str, default='',
-                    help='path to export the final model in onnx format')
 parser.add_argument('--nhead', type=int, default=2,
                     help='the number of heads in the encoder/decoder of the transformer model')
 parser.add_argument('--dry-run', action='store_true',
@@ -80,32 +85,10 @@ if torch.cuda.is_available():
 device = torch.device("cuda:" + str(args.cuda) if isinstance(args.cuda, int) else "cpu")
 
 ###############################################################################
-# Load data
-###############################################################################
-
-# Starting from sequential data, batchify arranges the dataset into columns.
-# For instance, with the alphabet as the sequence and batch size 4, we'd get
-# ┌ a g m s ┐
-# │ b h n t │
-# │ c i o u │
-# │ d j p v │
-# │ e k q w │
-# └ f l r x ┘.
-# These columns are treated as independent by the model, which means that the
-# dependence of e. g. 'g' on 'f' can not be learned, but allows more efficient
-# batch processing.
-
-eval_batch_size = 10
-vocab = load_vocab(root, 'train.txt', args.vocab_size)
-train_data = load_content_tokens(root, 'train.txt', vocab, device).batchify(args.batch_size)
-val_data = load_content_tokens(root, 'valid.txt', vocab, device).batchify(eval_batch_size)
-# test_data = load_content_tokens(root, 'test.txt', vocab, device).batchify(eval_batch_size)
-
-###############################################################################
 # Build the model
 ###############################################################################
 
-ntokens = vocab.vocab_size()
+ntokens = args.vocab_size
 model = model.RNNModel(args.model, ntokens, args.emsize, args.nhid, args.nlayers, args.dropout, args.tied).to(device)
 
 print(model)
@@ -127,6 +110,31 @@ else:
     last_epoch = 1
 
 criterion = nn.NLLLoss()
+
+###############################################################################
+# Load data
+###############################################################################
+
+# Starting from sequential data, batchify arranges the dataset into columns.
+# For instance, with the alphabet as the sequence and batch size 4, we'd get
+# ┌ a g m s ┐
+# │ b h n t │
+# │ c i o u │
+# │ d j p v │
+# │ e k q w │
+# └ f l r x ┘.
+# These columns are treated as independent by the model, which means that the
+# dependence of e. g. 'g' on 'f' can not be learned, but allows more efficient
+# batch processing.
+
+eval_batch_size = 10
+vocab = load_vocab(root, 'train.txt', args.vocab_size)
+print('load train')
+train_data = load_content_tokens(root, 'train.txt', vocab, device).batchify(args.batch_size)
+print('load validate')
+val_data = load_content_tokens(root, 'valid.txt', vocab, device).batchify(eval_batch_size)
+print('load test')
+test_data = load_content_tokens(root, 'test.txt', vocab, device).batchify(eval_batch_size)
 
 ###############################################################################
 # Training code
@@ -163,20 +171,16 @@ def evaluate(data_source):
     model.eval()
     total_loss = 0.
 
-    if args.model != 'Transformer':
-        hidden = model.init_hidden(eval_batch_size)
+    hidden = model.init_hidden(eval_batch_size)
+
     with torch.no_grad():
         x = 0
         acc = 0
 
         for i in range(0, data_source.size(0) - 1, args.bptt):
             data, targets = get_batch(data_source, i)
-            if args.model == 'Transformer':
-                output = model(data)
-                output = output.view(-1, ntokens)
-            else:
-                output, hidden = model(data, hidden)
-                hidden = repackage_hidden(hidden)
+            output, hidden = model(data, hidden)
+            hidden = repackage_hidden(hidden)
             total_loss += len(data) * criterion(output, targets).item()
 
             acc += ((targets == output.argmax(dim=1)).sum()) / targets.shape[0]
@@ -191,19 +195,15 @@ def train():
     total_loss = 0.
     start_time = time.time()
 
-    if args.model != 'Transformer':
-        hidden = model.init_hidden(args.batch_size)
+    hidden = model.init_hidden(args.batch_size)
+
     for batch, i in enumerate(range(0, train_data.size(0) - 1, args.bptt)):
         data, targets = get_batch(train_data, i)
         # Starting each batch, we detach the hidden state from how it was previously produced.
         # If we didn't, the model would try backpropagating all the way to start of the dataset.
         model.zero_grad()
-        if args.model == 'Transformer':
-            output = model(data)
-            output = output.view(-1, ntokens)
-        else:
-            hidden = repackage_hidden(hidden)
-            output, hidden = model(data, hidden)
+        hidden = repackage_hidden(hidden)
+        output, hidden = model(data, hidden)
         loss = criterion(output, targets)
         loss.backward()
 
@@ -225,15 +225,6 @@ def train():
             start_time = time.time()
         if args.dry_run:
             break
-
-
-def export_onnx(path, batch_size, seq_len):
-    print('The model is also exported in ONNX format at {}'.
-          format(os.path.realpath(args.onnx_export)))
-    model.eval()
-    dummy_input = torch.LongTensor(seq_len * batch_size).zero_().view(-1, batch_size).to(device)
-    hidden = model.init_hidden(batch_size)
-    torch.onnx.export(model, (dummy_input, hidden), path)
 
 
 # Loop over epochs.
@@ -271,28 +262,24 @@ try:
                 }, f)
 
             best_val_loss = val_loss
-        else:
+        # else:
             # Anneal the learning rate if no improvement has been seen in the validation dataset.
-            lr /= 2
+            # lr /= 2
 except KeyboardInterrupt:
     print('-' * 89)
     print('Exiting from training early')
 
 # Load the best saved model.
-# with open(model_name, 'rb') as f:
-#     checkpoint = torch.load(model_name)
-#     model.load_state_dict(checkpoint['model_state_dict'])
-#
-#     if args.model in ['RNN_TANH', 'RNN_RELU', 'LSTM', 'GRU']:
-#         model.rnn.flatten_parameters()
+with open(model_name, 'rb') as f:
+    checkpoint = torch.load(model_name)
+    model.load_state_dict(checkpoint['model_state_dict'])
+
+    if args.model in ['RNN_TANH', 'RNN_RELU', 'LSTM', 'GRU']:
+        model.rnn.flatten_parameters()
 
 # Run on test data.
-# test_loss, acc = evaluate(test_data)
-# print('=' * 93)
-# print('| End of training | test loss {:5.4f} | test ppl {:8.4f}'.format(
-#     test_loss, math.exp(test_loss)))
-# print('=' * 93)
-
-if len(args.onnx_export) > 0:
-    # Export the model in ONNX format.
-    export_onnx(args.onnx_export, batch_size=1, seq_len=args.bptt)
+test_loss, acc = evaluate(test_data)
+print('=' * 93)
+print('| End of training | test loss {:5.4f} | test ppl {:8.4f}'.format(
+    test_loss, math.exp(test_loss)))
+print('=' * 93)
