@@ -1,0 +1,10 @@
+matplotlib==3.5.0
+nltk==3.7
+numpy==1.21.4
+pandas==1.3.4
+scipy==1.7.3
+seaborn==0.11.2
+sentencepiece==0.1.96
+Shapely==1.8.1
+torch==1.9.1+cu111
+collection==0.1.6

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e812cb1d-a314-4d08-9d49-141a66669a90" name="Changes" comment="final">
+      <change beforePath="$PROJECT_DIR$/document/page_xml.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/page_xml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/document/stubs.py" beforeDir="false" afterPath="$PROJECT_DIR$/document/stubs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/e_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/e_results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generated.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/geometric.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gt.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/language_model/carrier.py" beforeDir="false" afterPath="$PROJECT_DIR$/language_model/carrier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language_model/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/language_model/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language_model/content.py" beforeDir="false" afterPath="$PROJECT_DIR$/language_model/content.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language_model/content_tokens.py" beforeDir="false" afterPath="$PROJECT_DIR$/language_model/content_tokens.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language_model/evaluate/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/language_model/evaluate/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language_model/evaluate/results_graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/language_model/evaluate/results_graphs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language_model/evaluate/text_evaluate.py" beforeDir="false" afterPath="$PROJECT_DIR$/language_model/evaluate/text_evaluate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language_model/evaluate/token_evaluate.py" beforeDir="false" afterPath="$PROJECT_DIR$/language_model/evaluate/token_evaluate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language_model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/language_model/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language_model/vocabulary.py" beforeDir="false" afterPath="$PROJECT_DIR$/language_model/vocabulary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language_model_evaluate.py" beforeDir="false" afterPath="$PROJECT_DIR$/language_model_evaluate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language_model_generate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/language_model_graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/language_model_graphs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/language_model_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/language_model_train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_order.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_order/metric/dp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_order/metric/prima.py" beforeDir="false" afterPath="$PROJECT_DIR$/reading_order/metric/prima.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_order/metric/prima_methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/reading_order/metric/prima_methods.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_order/metric/tests/prima.py" beforeDir="false" afterPath="$PROJECT_DIR$/reading_order/metric/tests/prima.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_order/processor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_order/reading_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/reading_order/reading_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_order/reading_order_results/aletheia-results.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_order/reading_order_results/hn-results.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_order/stubs.py" beforeDir="false" afterPath="$PROJECT_DIR$/reading_order/stubs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_order_aletheia_evaluate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_order_compare.py" beforeDir="false" afterPath="$PROJECT_DIR$/reading_order_compare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_order_eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/reading_order_eval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_order_eval_graphs.py" beforeDir="false" afterPath="$PROJECT_DIR$/reading_order_eval_graphs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_order_methods_graphs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_order_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/reading_order_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_order_tokens_evaluate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reading_order_tokens_graphs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spatial/plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/spatial/plotter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spatial/spare.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spatial/stubs.py" beforeDir="false" afterPath="$PROJECT_DIR$/spatial/stubs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spatial/tests/spare.py" beforeDir="false" afterPath="$PROJECT_DIR$/spatial/tests/spare.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/collection.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/collection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/sorting.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/sorting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/topsort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xmls.py" beforeDir="false" afterPath="$PROJECT_DIR$/xmls.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="tst" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="26ypQfC6tDKFXQsh45UEZ0alChk" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e812cb1d-a314-4d08-9d49-141a66669a90" name="Changes" comment="" />
+      <created>1648405666186</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648405666186</updated>
+      <workItem from="1648405668777" duration="1503000" />
+      <workItem from="1648458287033" duration="77000" />
+      <workItem from="1652769645404" duration="30000" />
+      <workItem from="1652769711625" duration="2206000" />
+    </task>
+    <task id="LOCAL-00001" summary="github init">
+      <created>1648405851764</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1648405851764</updated>
+    </task>
+    <task id="LOCAL-00002" summary="rm too large models">
+      <created>1648406235118</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1648406235118</updated>
+    </task>
+    <task id="LOCAL-00003" summary="github repo init">
+      <created>1648406567704</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648406567704</updated>
+    </task>
+    <task id="LOCAL-00004" summary="final">
+      <created>1652770307140</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652770307140</updated>
+    </task>
+    <task id="LOCAL-00005" summary="git lfs">
+      <created>1652770747134</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1652770747134</updated>
+    </task>
+    <task id="LOCAL-00006" summary="git lfs">
+      <created>1652771115069</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652771115069</updated>
+    </task>
+    <task id="LOCAL-00007" summary="final">
+      <created>1652771370105</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652771370105</updated>
+    </task>
+    <task id="LOCAL-00008" summary="final">
+      <created>1652771397755</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1652771397755</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="github init" />
+    <MESSAGE value="rm too large models" />
+    <MESSAGE value="github repo init" />
+    <MESSAGE value="git lfs" />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
+  </component>
+</project>
